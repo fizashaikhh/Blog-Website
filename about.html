@@ -54,6 +54,13 @@
         <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: white;color: mediumpurple;
           border-color: mediumpurple;" type="submit">Search</button>
       </form>
+      <form class="form-inline my-2 my-lg-0">
+        
+        <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: white;color:green;
+          border-color: green;" type="button" data-toggle="modal" data-target="#loginmodal">Login</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: white;color:green;
+          border-color: green;" type="button" data-toggle="modal" data-target="#signupmodal">Sign up</button>
+      </form>
     </div>
   </nav>
   <div class="conatiner-md">
@@ -88,6 +95,84 @@
        <img src="https://images.unsplash.com/photo-1561149410-cbc54f7aad47?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400" class="img-fluid">
         </div>
       </div>
+      <!-- Login modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="loginmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Sign up modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="signupmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" class="form-control" aria-describedby="emailHelp">
+                  <small  class="form-text text-muted">Enter your full name.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Keep me updated with all the recent blog activities.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <hr class="featurette-divider"><br>
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
